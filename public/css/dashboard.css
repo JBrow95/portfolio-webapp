@@ -1,24 +1,94 @@
-html, body {
+@import url('https://fonts.googleapis.com/css?family=Niramit|Open+Sans|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+html {
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
-/* body {
+body {
+    margin: 0;
+    padding: 0;
     width: 100%;
     height: 100vh;
-    background: url("/images/cover.jpeg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: table;
-} */
-
-.header-section {
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(180deg, rgba(0,0,0,0.8), rgba(7,7,7,0.7)), url("/images/cover.jpeg");
+    background: linear-gradient( rgb(8, 12, 221), rgb(17, 53, 216));
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: table;
 }
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 80px;
+}
+
+.avi {
+    letter-spacing: 1px;
+    float: left;
+    color: #fff;
+    font-size: 16px;
+    line-height: 80px;
+    padding: 0 6rem;
+}
+
+.menu {
+    float: right;
+    line-height: 50px;
+    margin: 0 6em;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    display: inline-block;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: lighter;
+    padding: 0 1.2rem;
+}
+
+ul li:nth-child(4) a {
+    color: blue;
+}
+
+/* Moto */
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo h1 {
+    font-size: 3rem;
+    color: #efefef;
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    letter-spacing: 5px;
+}
+
+.logo p {
+    font-size: 1rem;
+    color: #ccc;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-align: center;
+    font-family: 'Roboto';
+}
+
+
+
