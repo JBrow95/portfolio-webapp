@@ -4,24 +4,40 @@
     </head>
     <body>
         <div class="wrapper">
-            <div class="nav">
-                <div class="avi">
-                    Justin Browning
-                </div>
-                <div class="menu">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Me</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
+            <div class="slide-btn">
+                <ul>
+                    <li><button id="s1"></button></li>
+                    <li><button id="s2" onclick="slideBtn()"></button></li>
+                </ul>
             </div>
 
-            <div class="logo">
-                <h1>Fullstack Developer</h1>
-                <p>Check out my work</p>
-            </div>
+            <section id="header-content">
+                <div class="nav">
+                    <div class="avi">
+                        Justin Browning
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Me</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="logo">
+                    <h1>Fullstack Developer</h1>
+                    <button id="btn" onclick="workSlide()">MY WORK</button>
+                </div>
+            </section>
+
+            <section id="work-content">
+
+            </section>
+
         </div>
     </body>
+
+    <script src="js/dashboard.js"></script>
 </html>
