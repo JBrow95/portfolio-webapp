@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Niramit|Open+Sans|Roboto');
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
 
 html {
     margin: 0;
@@ -12,7 +14,7 @@ body {
     padding: 0;
     width: 100%;
     height: 100vh;
-    background: linear-gradient( rgb(8, 12, 221), rgb(17, 53, 216));
+    background: #5CDB95;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -29,16 +31,20 @@ body {
     width: 100%;
     height: 80px;
     font-family: 'Quicksand';
+    animation: nav 3s ease;
 }
 
 .avi {
     letter-spacing: 1px;
     float: left;
-    color: #fff;
-    font-size: 1.3rem;
+    color: #05386B;
+    font-size: 1.4rem;
     line-height: 80px;
     padding: 0 6rem;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
+    font-weight: normal;
+    letter-spacing: 5px;
+    animation: nav 1s ease;
 }
 
 .menu {
@@ -57,15 +63,27 @@ body {
 
 .menu ul li a {
     text-decoration: none;
-    color: #fff;
-    font-size: 1.3rem;
-    font-weight: lighter;
-    padding: 0 1.2rem;
+    color: #05386B;
+    font-size: 1.4rem;
+    font-weight: bold;
+    /* padding: 0 1.2rem; */
+    margin: 0 1.2rem;
     text-transform: uppercase;
 }
 
 .menu a:hover {
-    color: #ccc;
+    border-bottom: 2px solid #05386B;
+    /* padding: 0; */
+}
+
+span {
+    border: 2px solid #05386B;
+    color: #EDF5E1;
+    background: #05386B;
+    text-transform: capitalize;
+    border-bottom-right-radius: 30px;
+    padding: 12px;
+    font-family: 'Raleway', sans-serif;
 }
 
 /* Moto */
@@ -76,21 +94,23 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    animation: load 1s ease;
 }
 
 .logo h1 {
-    font-size: 3rem;
-    color: #efefef;
+    font-size: 3.5rem;
+    color: #EDF5E1;
     text-transform: uppercase;
-    font-family: 'Open Sans';
-    letter-spacing: 5px;
+    font-family: 'Quicksand';
+    font-weight: bold;
+    letter-spacing: 10px;
 }
 
 #btn {
     outline: none;
-    border: 2px solid rgb(226, 193, 8);
-    font-size: 1.5rem;
-    color: #fff;
+    border: 2px solid #05386B;
+    font-size: 1.8rem;
+    color: #05386B;
     letter-spacing: 2px;
     padding: 10px 15px;
     background: transparent;
@@ -99,19 +119,13 @@ body {
 }
 
 #btn:hover {
-    background: rgb(226, 193, 8);
-    color: #181818;
+    background: #05386B;
+    color: #EDF5E1;
     transition: all 0.2s ease-in-out;
 }
 
 section {
     height: 100vh;
-}
-
-/* Work Section */
-
-#work-content {
-    background: #fff;
 }
 
 /* Slide buttons */
@@ -121,6 +135,7 @@ section {
     top: 50%;
     left: 95%;
     transform: translate(-50%, -50%);
+    animation: btn 1s ease;
 }
 
 .slide-btn li {
@@ -132,11 +147,53 @@ section {
     content: '';
     outline: none;
     background: transparent;
-    border: 2px solid #000;
+    border: 2px solid #05386B;
     border-radius: 50px;
     padding: 7px;
 }
 
 .slide-btn button:hover {
-    background: #000;
+    background: #05386B;
+}
+
+/* Work Section */
+
+#work-content {
+    background: #EDF5E1;
+}
+
+/* Animations */
+
+@keyframes load {
+    0% {
+        top: 100%;
+        opacity: 0;
+    }
+
+    100% {
+        top: 50%;
+        opacity: 1;
+    }
+}
+
+@keyframes btn {
+    0% {
+        left:  100%;
+        opacity: 0;
+    }
+
+    100% {
+        left: 95%;
+        opacity: 1;
+    }
+}
+
+@keyframes nav {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
