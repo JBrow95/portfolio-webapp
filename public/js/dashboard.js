@@ -11,3 +11,8 @@ function slideBtn() {
 function slideupBtn() {
     window.scroll({top: 0, left: 0, behavior: 'smooth'});
 }
+
+function bgChange() {
+    var x = document.getElementById('body');
+    x.style.backgroundColor = "red";
+}
