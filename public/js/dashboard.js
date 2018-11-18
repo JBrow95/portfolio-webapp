@@ -13,6 +13,6 @@ function slideupBtn() {
 }
 
 function bgChange() {
-    var x = document.getElementById('body');
-    x.style.backgroundColor = "red";
+    var x = document.getElementById('rot');
+    x.style.transition = "all 1s ease";
 }
