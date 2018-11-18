@@ -101,7 +101,7 @@ span {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    animation: load 1s ease;
+    animation: load 1.5s ease;
 }
 
 .logo h1 {
@@ -177,9 +177,12 @@ section {
         opacity: 0;
     }
 
+    50% {
+        opacity: 1;
+    }
+
     100% {
         top: 50%;
-        opacity: 1;
     }
 }
 
