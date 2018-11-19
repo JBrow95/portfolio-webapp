@@ -15,22 +15,20 @@ body {
     overflow: hidden;
 }
 
+section {
+    height: 100vh;
+}
+
 .wrapper {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100vh;
-    background: #5CDB95;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     overflow: hidden;
-    display: table;
+    background: #5CDB95;
 }
 
-
 .nav {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     padding: 0;
@@ -105,7 +103,7 @@ span {
 }
 
 .logo h1 {
-    font-size: 3.5rem;
+    font-size: 4rem;
     color: #EDF5E1;
     text-transform: uppercase;
     font-family: 'Quicksand';
@@ -154,20 +152,22 @@ section {
     content: '';
     outline: none;
     background: transparent;
-    border: 2px solid #05386B;
+    border: 2px solid #EDF5E1;
     border-radius: 50px;
     padding: 9px;
 }
 
 .slide-btn button:hover {
-    background: #05386B;
+    background: #EDF5E1;
 }
 
 /* Work Section */
 
 #work-content {
-    background: #EDF5E1;
+    background: #05386B;
 }
+
+
 
 /* Animations */
 
