@@ -16,3 +16,4 @@ function bgChange() {
     var x = document.getElementById('rot');
     x.style.transition = "all 1s ease";
 }
+
