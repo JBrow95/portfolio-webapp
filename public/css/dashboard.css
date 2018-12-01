@@ -256,3 +256,11 @@ section {
         opacity: 1;
     }
 }
+
+/* Media Queries */
+
+@media(max-width: 768px) {
+    .skills-content {
+        flex-direction: column;
+    }
+}
