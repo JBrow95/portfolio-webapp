@@ -1,11 +1,13 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+        <script src="js/dashboard.js"></script>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     </head>
 
 
-    <body id="body" onclick="bgChange()">
+    <body id="body">
 
         <div class="wrapper">
             <div class="pre-loader">
@@ -15,8 +17,8 @@
             <div class="slide-btn">
                 <ul>
                     <li><button id="s1" onclick="slideupBtn()"></button></li>
-                    <li><button id="s2" onclick="slideBtn()"></button></li>
-                    <li><button id="s3" onclick="slide2Btn()"></button></li>
+                    <li><button id="s2" onclick="skillSlide()"></button></li>
+                    <li><button id="s3"></button></li>
                 </ul>
             </div>
 
@@ -28,7 +30,7 @@
                     <div class="menu">
                         <ul>
                             <li><a href="#">About</a></li>
-                            <li><a href="#">Skills</a></li>
+                            <li><a href="#" onclick="skillSlide()">Skills</a></li>
                             <li><a href="#">Projects</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
@@ -41,12 +43,65 @@
                 </div>
             </section>
 
-            <section id="work-content">
-               
+            <section id="skills-content">
+               <div class="skills-wrapper">
+                    <div class="skills-content">
+                        <div class="skills-row">
+                            <h1>Designer</h1>
+
+                            <ul>
+                                <li>Adobe XD</li>
+                                <li>Photoshop</li>
+                                <li>Pen and Paper</li>
+                            </ul>
+                        </div>
+
+                        <div class="skills-row">
+                            <h1>Front-End</h1>
+
+                            <ul>
+                                <li>HTML 5</li>
+                                <li>CSS3</li>
+                                <li>Sass</li>
+                                <li>Pug</li>
+                                <li>Javascript</li>
+                                <li>Jquery</li>
+                                <li>Ajax</li>
+                                <li>Json</li>
+                                <li>Bootstrap</li>
+                            </ul>
+                        </div>
+
+                        <div class="skills-row">
+                            <h1>Back-End</h1>
+
+                            <p>Langauges</p>
+                            <ul>
+                                <li>Ruby</li>
+                                <li>Node.js</li>
+                            </ul>
+
+                            <p>Frameworks</p>
+                            <ul>
+                                <li>Express</li>
+                                <li>Sinatra</li>
+                            </ul>
+
+                            <p>Tools</p>
+                            <ul>
+                                <li>AWS/RDS</li>
+                                <li>PostgreSQL</li>
+                                <li>GIT</li>
+                                <li>Ngrok</li>
+                                <li>NPM</li>
+                                <li>YARN</li>
+                            </ul>
+                        </div>
+                    </div>
+               </div>
             </section>
 
         </div>
     </body>
 
-    <script src="js/dashboard.js"></script>
 </html>
