@@ -216,6 +216,9 @@ section {
     text-transform: uppercase;
 }
 
+figure h2 {
+    color: #EDF5E1;
+}
 
 
 /* Animations */
