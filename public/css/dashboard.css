@@ -182,7 +182,7 @@ section {
 
 .skills-row {
     flex: 1;
-    color: #fff;
+    color: #EDF5E1;
     border: 2px solid;
     border-radius: 10px;
 }
@@ -213,6 +213,8 @@ section {
     font-family: 'Niramit';
     margin-left: 0;
     margin-right: 0;
+    text-transform: uppercase;
+    color: #EDF5E1;
     text-transform: uppercase;
 }
 
