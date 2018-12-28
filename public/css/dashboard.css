@@ -213,9 +213,11 @@ section {
     border-bottom: 3px solid #5CDB95;
 }
 
+/* About Section */
 
-
-
+#about {
+    background: #EDF5E1;
+}
 
 
 
