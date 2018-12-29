@@ -8,6 +8,7 @@ function skillSlide() {
     dots.forEach(element => {
         element.style.borderColor = "#EDF5E1";
     });
+
 }
 
 function slideupBtn() {
@@ -36,6 +37,13 @@ function slide3Btn() {
 
     dots.forEach(element => {
         element.style.borderColor = "#05386B";
-        element.style.transition = "1s"
-    });
+    });      
 }
+
+function loadHover() {
+    $(".slide-btn button").hover(function(){
+        $(this).css("background-color", "#05386B");
+        }, function(){
+        $(this).css("background-color", "white");
+    }); 
+};    
